@@ -1,3 +1,5 @@
+import { Wrapper } from './components/Wrapper/Wrapper';
+
 export const App = () => {
-    return <div></div>;
+    return <Wrapper />;
 };
