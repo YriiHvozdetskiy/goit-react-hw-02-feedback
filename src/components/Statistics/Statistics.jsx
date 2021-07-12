@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { List, ItemList, Span } from '../Feedback/Feedback.styles';
 
 export const Statistics = ({
@@ -28,4 +29,20 @@ export const Statistics = ({
       </List>
     </>
   );
+};
+
+Statistics.defaultProps = {
+  good: 0,
+  neutral: 0,
+  bad: 0,
+  total: 0,
+  positivePercentage: 0,
+};
+
+Statistics.propTypes = {
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+  positivePercentage: PropTypes.number,
+  total: PropTypes.number,
 };
