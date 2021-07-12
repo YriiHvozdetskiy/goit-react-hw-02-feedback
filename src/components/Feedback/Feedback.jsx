@@ -12,9 +12,8 @@ export class Feedback extends Component {
     bad: 0,
   };
 
-  show = bool => {
-    if (!bool) return false;
-    if (bool) return true;
+  show = isShowing => {
+    return !!isShowing;
   };
 
   onLeaveFeedback = event => {
@@ -25,8 +24,6 @@ export class Feedback extends Component {
       if (value === 'Neutral') return { neutral: prevState.neutral + 1 };
       if (value === 'Bad') return { bad: prevState.bad + 1 };
     });
-
-    this.show(true);
   };
 
   countTotalFeedback = () => {
