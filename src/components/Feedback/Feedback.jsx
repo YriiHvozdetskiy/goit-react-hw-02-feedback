@@ -64,23 +64,6 @@ export class Feedback extends Component {
             />
           </Notification>
         </Section>
-        {/* <Section title={'Plese leave feedback'}>
-          <FeedbackOptions
-            options={['Good', 'Neutral', 'Bad']}
-            onLeaveFeedback={this.onLeaveFeedback}
-          />
-        </Section>
-
-        <Section title={'Statistics'}></Section>
-        <Notification message="No feedback given">
-          <Statistics
-            good={this.state.good}
-            neutral={this.state.neutral}
-            bad={this.state.bad}
-            total={total}
-            positivePercentage={proc}
-          />
-        </Notification> */}
       </>
     );
   }

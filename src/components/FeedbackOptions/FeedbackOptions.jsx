@@ -12,15 +12,6 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
           </ItemList>
         );
       })}
-      {/* <ul>
-        {options.map(button => {
-          return (
-            <li key={button}>
-              <button onClick={onLeaveFeedback}>{button}</button>
-            </li>
-          );
-        })}
-      </ul> */}
     </>
   );
 };

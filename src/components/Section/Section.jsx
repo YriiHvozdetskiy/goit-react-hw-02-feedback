@@ -5,8 +5,6 @@ export const Section = ({ children, title }) => {
     <>
       <TitleH1>{title}</TitleH1>
       {children}
-      {/* <h1>{title}</h1>
-      {children} */}
     </>
   );
 };

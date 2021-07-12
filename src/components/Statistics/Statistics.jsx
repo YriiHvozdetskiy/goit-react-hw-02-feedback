@@ -26,14 +26,6 @@ export const Statistics = ({
           Positive feedback:<Span gapLeft={5}>{positivePercentage}</Span>%
         </ItemList>
       </List>
-
-      {/* <ul>
-        <li>Good:{good}</li>
-        <li>neutral:{neutral}</li>
-        <li>bad:{bad}</li>
-        <li>total:{total}</li>
-        <li>positivePercentage:{positivePercentage}</li>
-      </ul> */}
     </>
   );
 };
