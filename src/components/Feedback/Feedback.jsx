@@ -17,12 +17,12 @@ export class Feedback extends Component {
   };
 
   onLeaveFeedback = event => {
-    const value = event.target.textContent;
+    const value = event.target.textContent.toLowerCase();
 
     this.setState(prevState => {
-      if (value === 'Good') return { good: prevState.good + 1 };
-      if (value === 'Neutral') return { neutral: prevState.neutral + 1 };
-      if (value === 'Bad') return { bad: prevState.bad + 1 };
+      if (value === 'good') return { good: prevState[value] + 1 };
+      if (value === 'neutral') return { neutral: prevState[value] + 1 };
+      if (value === 'bad') return { bad: prevState[value] + 1 };
     });
   };
 
